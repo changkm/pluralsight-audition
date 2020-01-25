@@ -11,29 +11,6 @@ except AttributeError:
     collectionsAbc = collections
 
 
-def sublist_contains(lst: List[str], contents: List[str]) -> bool:
-    """
-    Returns True if a sublist of lst contains all of the elts of contents.
-    Returns False otherwise.
-    sublist_contains(
-        [['a', 'b', 'c'], ['x','y','z']],
-        ['a', 'c']) => True
-    sublist_contains(
-        [['a', 'b', 'c'], ['x','y','z']],
-        ['a', 'b', 'c', 'x']) => False
-    """
-    ret = False
-    for line in lst:
-        this_line = True
-        for elt in contents:
-            if elt not in line:
-                this_line = False
-                break
-        if this_line:
-            ret = True
-    return ret
-
-
 def convert_ast(node, return_type='string', include_type=False, sep=':'):
     count = 1
     def _flatten_dict(d, parent_key='', sep=':'):

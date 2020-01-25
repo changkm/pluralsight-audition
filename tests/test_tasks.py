@@ -41,7 +41,7 @@ def test_beautiful_soup_object():
 
 @pytest.mark.task5
 def test_find_table():
-    """Test that the document's table is assigned to the variable `price_table`"""
+    """Test that the document's table is assigned to the variable `price_table`."""
     assignments = get_assignments(solution.get_stock_price)
     message = 'Did you use find the table using doc.table and assign it to a variable called `price_table`?'
     assert 'price_table:doc:table' in assignments, message
@@ -55,9 +55,9 @@ def test_find_td():
 
 @pytest.mark.task7
 def test_invalid_name():
-    """Test that the function returns `None` if a name is given that is not in the page."""
-    message = 'Did you check whether `td is None` and, if so, return -1?'
-    assert solution.get_stock_price('ThisNameDoesNotExist') == -1, message
+    """Test that the function returns None if a name is given that is not in the page."""
+    message = 'Did you check whether `td is None` and, if so, return None?'
+    assert solution.get_stock_price('ThisNameDoesNotExist') is None, message
 
 @pytest.mark.task8
 def test_find_parent():

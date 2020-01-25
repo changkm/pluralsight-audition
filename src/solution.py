@@ -26,6 +26,5 @@ def get_stock_price(name):
     # Task 9: Find the price
     price_elt = parent.find('td', class_="price")
 
-
     # Task 10: Return the price
     return price_elt.string

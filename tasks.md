@@ -83,7 +83,7 @@ Find the `<td>` that contains `name` and assign it to a variable called `td`.
 
 ## Task 7:
 If there is nothing that matches in the document, `find` will return `None`.
-Using an `if` statement, check to see whether `td` is `None` and if it is, have your function return -1.
+Using an `if` statement, check to see whether `td` is `None`, and if it is, have your function return `None`.
 
 ## Task 8: Find the parent
 The table row (`<tr>`) we are looking for is the parent of the td we found. Find the correct `<tr>` using the attribute `.parent` and assign it to a variable called `parent`.
